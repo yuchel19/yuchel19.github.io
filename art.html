@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Artworks</title>
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300|Work+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7382b2565a.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <img id="menu" src="hamburg%20menu.svg" alt="menu" onclick="openNav()">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="#" onclick="showSublist()">projects
+            <i class="fas fa-angle-up" id="upCarrot"></i>
+            <i class="fas fa-angle-down" id="downCarrot" style="display: none;"></i>
+        </a>
+        <div id="sublist" style="display: none;">
+            <a href="zotfinder.html">ZOTFinder</a>
+            <a href="uci_now.html">UCI Now</a>
+            <a href="okrs.html">OKRs</a>
+            <a href="sticker.html">AIF Campaign</a>
+            <a href="site.html">Personal Site</a>
+        </div>
+        <a href="design.html">design</a>
+        <a href="art.html">art</a>
+    </div>
+
+    <div class="top_blurb">
+        <img src="pages/artwork%20head.jpg">
+    </div>
+
+    <div class="portfolio">
+        <div class="left_container"
+             onclick="display_image('watershoe_modal', 'watershoe_thumb', 'watershoe_img', 'artworks/water%20shoe.jpg')">
+            <img src="art%20tiles/water%20shoe.jpg" alt="Shoe in Water" class="thumbnail" id="watershow_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('cat_modal', 'cat_thumb', 'cat_img', 'artworks/cat.jpg')">
+            <img src="art%20tiles/cat.jpg" alt="Cat Drawing" class="thumbnail" id="cat_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('shoebox_modal', 'shoebox_thumb', 'shoebox_img', 'artworks/shoe%20box.jpg')">
+            <img src="art%20tiles/shoe%20box.jpg" alt="Shoe in Water Drawing" class="thumbnail" id="shoebox_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('tie_modal', 'tie_thumb', 'tie_img', 'artworks/shoe%20tie.jpg')">
+            <img src="art%20tiles/tie.jpg" alt="Tying Shoe Drawing" class="thumbnail" id="tie_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('strand_modal', 'strand_thumb', 'strand_img', 'artworks/strand%20shoe.jpg')">
+            <img src="art%20tiles/strand.jpg" alt="Strand Shoe Drawing" class="thumbnail" id="strand_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('fight_modal', 'fight_thumb', 'fight_img', 'artworks/bike%20fight.jpg')">
+            <img src="art%20tiles/bike%20fight.jpg" alt="Bike Fight Drawing" class="thumbnail" id="fight_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('vase_modal', 'vase_thumb', 'vase_img', 'artworks/vase.jpg')">
+            <img src="art%20tiles/vase.jpg" alt="Vase, Garlic, & Flowers Still Life" class="thumbnail" id="vase_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('sleep_modal', 'sleep_thumb', 'sleep_img', 'artworks/sleep%20cat.jpg')">
+            <img src="art%20tiles/sleep%20cat.jpg" alt="Sleeping Cat Drawing" class="thumbnail" id="sleep_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('photo_modal', 'photo_thumb', 'photo_img', 'artworks/photograph.jpg')">
+            <img src="art%20tiles/photo.jpg" alt="Old Photograph Drawing" class="thumbnail" id="photo_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('waterbike_modal', 'waterbike_thumb', 'waterbike_img', 'artworks/water%20bike.jpg')">
+            <img src="art%20tiles/water%20bike.jpg" alt="Bike in Water Drawing" class="thumbnail" id="waterbike_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('doll_modal', 'doll_thumb', 'doll_img', 'artworks/doll.jpg')">
+            <img src="art%20tiles/doll.jpg" alt="Figure & Doll Still Life" class="thumbnail" id="doll_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('spirited_modal', 'spirited_thumb', 'spirited_img', 'artworks/spirited%20away.jpg')">
+            <img src="art%20tiles/spirited%20away.jpg" alt="Spirited Away Fanart" class="thumbnail" id="spirited_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('worker_modal', 'worker_thumb', 'worker_img', 'artworks/worker%20shoes.jpg')">
+            <img src="art%20tiles/worker%20shoe.jpg" alt="A Worker's Shoes Drawing" class="thumbnail" id="worker_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('dads_modal', 'dads_thumb', 'dads_img', 'artworks/dads%20shoes.jpg')">
+            <img src="art%20tiles/dads%20shoes.jpg" alt="Spirited Away Fanart" class="thumbnail" id="dads_thumb">
+        </div>
+
+    </div>
+
+
+    <!-- Modals -->
+    <div id="watershoe_modal" class="modal">
+        <span class="close" onclick="close_image('watershoe_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="watershoe_img">
+        </div>
+    </div>
+
+    <div id="cat_modal" class="modal">
+        <span class="close" onclick="close_image('cat_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="cat_img">
+        </div>
+    </div>
+
+    <div id="shoebox_modal" class="modal">
+        <span class="close" onclick="close_image('shoebox_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="shoebox_img">
+        </div>
+    </div>
+
+    <div id="tie_modal" class="modal">
+        <span class="close" onclick="close_image('tie_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="tie_img">
+        </div>
+    </div>
+
+    <div id="strand_modal" class="modal">
+        <span class="close" onclick="close_image('strand_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="strand_img">
+        </div>
+    </div>
+
+    <div id="fight_modal" class="modal">
+        <span class="close" onclick="close_image('fight_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="fight_img">
+        </div>
+    </div>
+
+    <div id="vase_modal" class="modal">
+        <span class="close" onclick="close_image('vase_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="vase_img">
+        </div>
+    </div>
+
+    <div id="sleep_modal" class="modal">
+        <span class="close" onclick="close_image('sleep_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="sleep_img">
+        </div>
+    </div>
+
+    <div id="photo_modal" class="modal">
+        <span class="close" onclick="close_image('photo_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="photo_img">
+        </div>
+    </div>
+
+    <div id="waterbike_modal" class="modal">
+        <span class="close" onclick="close_image('waterbike_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="waterbike_img">
+        </div>
+    </div>
+
+    <div id="doll_modal" class="modal">
+        <span class="close" onclick="close_image('doll_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="doll_img">
+        </div>
+    </div>
+
+    <div id="spirited_modal" class="modal">
+        <span class="close" onclick="close_image('spirited_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="spirited_img">
+        </div>
+    </div>
+
+    <div id="dads_modal" class="modal">
+        <span class="close" onclick="close_image('dads_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="dads_img">
+        </div>
+    </div>
+
+    <div id="worker_modal" class="modal">
+        <span class="close" onclick="close_image('worker_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="worker_img">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="design.js"></script>
+
+</body>
+
+<div class="footer">
+    <p>site designed & made by Rebekah Li</p>
+    <p>all assets &copy;Rebekah Li</p>
+</div>
+
+</html>

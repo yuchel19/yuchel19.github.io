@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Design</title>
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300|Work+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7382b2565a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon"/>
+</head>
+
+
+<body>
+    <img id="menu" src="hamburg%20menu.svg" alt="menu" onclick="openNav()">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="#" onclick="showSublist()">projects
+            <i class="fas fa-angle-up" id="upCarrot"></i>
+            <i class="fas fa-angle-down" id="downCarrot" style="display: none;"></i>
+        </a>
+        <div id="sublist" style="display: none;">
+            <a href="zotfinder.html">ZOTFinder</a>
+            <a href="uci_now.html">UCI Now</a>
+            <a href="okrs.html">OKRs</a>
+            <a href="sticker.html">AIF Campaign</a>
+            <a href="site.html">Personal Site</a>
+        </div>
+        <a href="design.html">design</a>
+        <a href="art.html">art</a>
+    </div>
+
+    <div class="top_blurb">
+        <img src="pages/design%20head.jpg">
+    </div>
+
+    <div class="portfolio">
+        <div class="left_container"
+             onclick="display_image('nswn_modal', 'nswn_thumb', 'nswn_img', 'design/nswn.jpg')">
+            <img src="design%20tiles/nswn.jpg" alt="NSWN Flyer" class="thumbnail" id="nswn_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('froshretreat_modal', 'froshretreat_thumb', 'froshretreat_img', 'design/frosh_retreat.jpg')">
+            <img src="design%20tiles/frosh%20retreat.jpg" alt="Freshmen Retreat Splash" class="thumbnail" id="froshretreat_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('dumpling_modal', 'dumpling_thumb', 'dumpling_img', 'design/dumplings.jpg')">
+            <img src="design%20tiles/dumpling.jpg" alt="Dumpling Poster" class="thumbnail" id="dumpling_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('wayfinder_modal', 'wayfinder_thumb', 'wayfinder_img', 'design/wayfinder.jpg')">
+            <img src="design%20tiles/wayfinder.jpg" alt="Wayfinder Poster" class="thumbnail" id="wayfinder_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('fboba_modal', 'fboba_thumb', 'fboba_img', 'design/boba_front.jpg')">
+            <img src="design%20tiles/boba%20front.jpg" alt="Boba Flyer (front)" class="thumbnail" id="fboba_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('fruity_modal', 'fruity_thumb', 'fruity_img', 'design/fruity.jpg')">
+            <img src="design%20tiles/fruity.jpg" alt="Fruit Drinks Poster" class="thumbnail" id="fruity_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('classics_modal', 'classics_thumb', 'classics_img', 'design/classics.jpg')">
+            <img src="design%20tiles/classics.jpg" alt="Classic Drinks Poster" class="thumbnail" id="classics_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('2019_modal', '2019_thumb', '2019_img', 'design/2019.jpg')">
+            <img src="design%20tiles/2019.jpg" alt="Class of 2019 Grad Gift" class="thumbnail" id="2019_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('bmenu_modal', 'bmenu_thumb', 'bmenu_img', 'design/menu_back.jpg')">
+            <img src="design%20tiles/menu%20back.jpg" alt="Playland Cafe Menu (back)" class="thumbnail" id="bmenu_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('fmenu_modal', 'fmenu_thumb', 'fmenu_img', 'design/menu_front.jpg')">
+            <img src="design%20tiles/menu%20front.jpg" alt="Playland Cafe Menu (front)" class="thumbnail" id="fmenu_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('yosemite_modal', 'yosemite_thumb', 'yosemite_img', 'design/yosemite.jpg')">
+            <img src="design%20tiles/yosemite.jpg" alt="Yosemite Trip Splash" class="thumbnail" id="yosemite_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('sws_modal', 'sws_thumb', 'sws_img', 'design/sws.jpg')">
+            <img src="design%20tiles/sws.jpg" alt="Sunday Worship Service Splash" class="thumbnail" id="sws_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('bboba_modal', 'bboba_thumb', 'bboba_img', 'design/boba_back.jpg')">
+            <img src="design%20tiles/boba%20back.jpg" alt="Boba Flyer (back)" class="thumbnail" id="bboba_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('study_modal', 'study_thumb', 'study_img', 'design/study.jpg')">
+            <img src="design%20tiles/study.jpg" alt="Study Hall Splash" class="thumbnail" id="study_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('2018_modal', '2018_thumb', '2018_img', 'design/2018.jpg')">
+            <img src="design%20tiles/2018.jpg" alt="Class of 2018 Grad Gift" class="thumbnail" id="2018_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('ucinow_modal', 'ucinow_thumb', 'ucinow_img', 'design/uci_now.jpg')">
+            <img src="design%20tiles/uci_now.jpg" alt="End of Year Splash" class="thumbnail" id="ucinow_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('a2f_modal', 'a2f_thumb', 'a2f_img', 'design/a2f_brochure.jpg')">
+            <img src="design%20tiles/a2f.jpg" alt="A2F Brochure" class="thumbnail" id="a2f_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('fwho_modal', 'fwho_thumb', 'fwho_img', 'design/who_front.jpg')">
+            <img src="design%20tiles/who%20front.jpg" alt="Who Am I (front)" class="thumbnail" id="fwho_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('bwho_modal', 'bwho_thumb', 'bwho_img', 'design/who_back.jpg')">
+            <img src="design%20tiles/who%20back.jpg" alt="A2F Brochure" class="thumbnail" id="bwho_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('wild_modal', 'wild_thumb', 'wild_img', 'design/wild.jpg')">
+            <img src="design%20tiles/wild.jpg" alt="Who Am I (front)" class="thumbnail" id="wild_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('redfin_modal', 'redfin_thumb', 'redfin_img', 'design/redfin.jpg')">
+            <img src="design%20tiles/redfin.jpg" alt="Redfin Splash" class="thumbnail" id="redfin_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('alexa_modal', 'alexa_thumb', 'alexa_img', 'design/alexa.jpg')">
+            <img src="design%20tiles/alexa.jpg" alt="WICS Amazon Alexa Workshop Splash" class="thumbnail" id="alexa_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('meals_modal', 'meals_thumb', 'meals_img', 'design/meals.jpg')">
+            <img src="design%20tiles/meals.jpg" alt="Macrobox Meals Business Card" class="thumbnail" id="meals_thumb">
+        </div>
+        <div class="right_container"
+             onclick="display_image('frosh_modal', 'frosh_thumb', 'frosh_img', 'design/frosh.jpg')">
+            <img src="design%20tiles/frosh.jpg" alt="Redfin Splash" class="thumbnail" id="frosh_thumb">
+        </div>
+
+        <div class="left_container"
+             onclick="display_image('mock_modal', 'mock_thumb', 'mock_img', 'design/mock.jpg')">
+            <img src="design%20tiles/mock.jpg" alt="Mock Interview Splash" class="thumbnail" id="mock_thumb">
+        </div>
+
+    </div>
+
+
+    <!-- Modals -->
+    <div id="nswn_modal" class="modal">
+        <span class="close" onclick="close_image('nswn_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="nswn_img">
+        </div>
+    </div>
+
+    <div id="froshretreat_modal" class="modal">
+        <span class="close" onclick="close_image('froshretreat_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="froshretreat_img">
+        </div>
+    </div>
+
+    <div id="dumpling_modal" class="modal">
+        <span class="close" onclick="close_image('dumpling_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="dumpling_img">
+        </div>
+    </div>
+
+    <div id="wayfinder_modal" class="modal">
+        <span class="close" onclick="close_image('wayfinder_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="wayfinder_img">
+        </div>
+    </div>
+
+    <div id="fboba_modal" class="modal">
+        <span class="close" onclick="close_image('fboba_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="fboba_img">
+        </div>
+    </div>
+
+    <div id="fruity_modal" class="modal">
+        <span class="close" onclick="close_image('fruity_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="fruity_img">
+        </div>
+    </div>
+
+    <div id="classics_modal" class="modal">
+        <span class="close" onclick="close_image('classics_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="classics_img">
+        </div>
+    </div>
+
+    <div id="2019_modal" class="modal">
+        <span class="close" onclick="close_image('2019_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="2019_img">
+        </div>
+    </div>
+
+    <div id="bmenu_modal" class="modal">
+        <span class="close" onclick="close_image('bmenu_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="bmenu_img">
+        </div>
+    </div>
+
+    <div id="fmenu_modal" class="modal">
+        <span class="close" onclick="close_image('fmenu_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="fmenu_img">
+        </div>
+    </div>
+
+    <div id="yosemite_modal" class="modal">
+        <span class="close" onclick="close_image('yosemite_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="yosemite_img">
+        </div>
+    </div>
+
+    <div id="sws_modal" class="modal">
+        <span class="close" onclick="close_image('sws_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="sws_img">
+        </div>
+    </div>
+
+    <div id="bboba_modal" class="modal">
+        <span class="close" onclick="close_image('bboba_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="bboba_img">
+        </div>
+    </div>
+
+    <div id="study_modal" class="modal">
+        <span class="close" onclick="close_image('study_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="study_img">
+        </div>
+    </div>
+
+    <div id="2018_modal" class="modal">
+        <span class="close" onclick="close_image('2018_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="2018_img">
+        </div>
+    </div>
+
+    <div id="ucinow_modal" class="modal">
+        <span class="close" onclick="close_image('ucinow_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="ucinow_img">
+        </div>
+    </div>
+
+    <div id="a2f_modal" class="modal">
+        <span class="close" onclick="close_image('a2f_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="a2f_img">
+        </div>
+    </div>
+
+    <div id="fwho_modal" class="modal">
+        <span class="close" onclick="close_image('fwho_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="fwho_img">
+        </div>
+    </div>
+
+    <div id="bwho_modal" class="modal">
+        <span class="close" onclick="close_image('bwho_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="bwho_img">
+        </div>
+    </div>
+
+    <div id="wild_modal" class="modal">
+        <span class="close" onclick="close_image('wild_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="wild_img">
+        </div>
+    </div>
+
+    <div id="redfin_modal" class="modal">
+        <span class="close" onclick="close_image('redfin_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="redfin_img">
+        </div>
+    </div>
+
+    <div id="alexa_modal" class="modal">
+        <span class="close" onclick="close_image('alexa_modal')">&times;</span>
+        <img class="modal-content" id="alexa_img">
+    </div>
+
+    <div id="meals_modal" class="modal">
+        <span class="close" onclick="close_image('meals_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="meals_img">
+        </div>
+    </div>
+
+    <div id="frosh_modal" class="modal">
+        <span class="close" onclick="close_image('frosh_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="frosh_img">
+        </div>
+    </div>
+
+    <div id="mock_modal" class="modal">
+        <span class="close" onclick="close_image('mock_modal')">&times;</span>
+        <div class="modal-content">
+            <img class="modal-content" id="mock_img">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="design.js"></script>
+
+</body>
+
+<div class="footer">
+    <p>site designed & made by Rebekah Li</p>
+    <p>&copy;Rebekah Li</p>
+</div>
+
+</html>

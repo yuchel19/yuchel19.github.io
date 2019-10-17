@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Rebekah Li</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300|Work+Sans&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://kit.fontawesome.com/7382b2565a.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+
+<body>
+    <img id="menu" src="hamburg%20menu.svg" alt="menu" onclick="openNav()">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="#" onclick="showSublist()">projects
+            <i class="fas fa-angle-up" id="upCarrot"></i>
+            <i class="fas fa-angle-down" id="downCarrot" style="display: none;"></i>
+        </a>
+        <div id="sublist" style="display: none;">
+            <a href="zotfinder.html">ZOTFinder</a>
+            <a href="uci_now.html">UCI Now</a>
+            <a href="okrs.html">OKRs</a>
+            <a href="sticker.html">AIF Campaign</a>
+            <a href="site.html">Personal Site</a>
+        </div>
+        <a href="design.html">design</a>
+        <a href="art.html">art</a>
+    </div>
+
+    <div class="top_blurb">
+        <img src="pages/desk.jpg">
+    </div>
+
+    <div class="title">
+        <img src="titles/projects.jpg">
+    </div>
+
+    <div class="portfolio">
+        <a href="zotfinder.html">
+            <div class="left_container">
+                <img src="tiles/zotfinder.jpg" alt="ZOTFinder" class="image">
+                <div class="overlay">
+                    <img src="tiles/dark%20zotfinder.jpg" class="hover_img">
+                </div>
+            </div>
+        </a>
+        <a href="uci_now.html">
+            <div class="right_container">
+                <img src="tiles/csl.jpg" alt="UCI Now CSL" class="image">
+                <div class="overlay">
+                    <img src="tiles/dark%20csl.jpg" class="hover_img">
+                </div>
+            </div>
+        </a>
+        <a href="okrs.html">
+            <div class="left_container">
+                <img src="tiles/okrs.jpg" alt="OKRs" class="image">
+                <div class="overlay">
+                    <img src="tiles/dark%20okrs.jpg" class="hover_img">
+                </div>
+            </div>
+        </a>
+        <a href="sticker.html">
+            <div class="right_container">
+                <img src="tiles/sticker.jpg" alt="AIF Campaign" class="image">
+                <div class="overlay">
+                    <img src="tiles/dark%20sticker.jpg" class="hover_img">
+                </div>
+            </div>
+        </a>
+        <a href="site.html">
+            <div class="left_container">
+                <img src="tiles/okrs.jpg" alt="OKRs" class="image">
+                <div class="overlay">
+                    <img src="tiles/dark%20site.jpg" class="hover_img">
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="title">
+        <img src="titles/more.jpg">
+    </div>
+
+    <div class="portfolio">
+        <a href="design.html">
+            <div class="left_container">
+                <img src="tiles/design.jpg" alt="Design" class="image">
+                <div class="overlay">
+                    <img src="tiles/dark%20design.jpg" class="hover_img">
+                </div>
+            </div>
+        </a>
+        <div class="right_container">
+            <img src="tiles/easel.jpg" alt="Artworks" class="image">
+            <div class="overlay">
+                <img src="tiles/dark%20easel.jpg" class="hover_img">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<div class="footer">
+    <p>site designed & made by Rebekah Li</p>
+    <p>&copy;Rebekah Li</p>
+</div>
+
+</html>

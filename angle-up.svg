@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="249px" height="161px" viewBox="0 0 249 161" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>angle-up</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hamburg-menu" transform="translate(-1.000000, -45.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="angle-up" transform="translate(1.000000, 45.000000)">
+                <path d="M137.723993,5.48192423 L243.515933,111.419607 C250.828022,118.74177 250.828022,130.581864 243.515933,137.826132 L225.935801,155.430482 C218.623711,162.752645 206.799906,162.752645 199.565604,155.430482 L124.5,80.4172555 L49.5121837,155.508377 C42.2000937,162.830541 30.3762887,162.830541 23.1419869,155.508377 L5.48406748,137.904027 C-1.82802249,130.581864 -1.82802249,118.74177 5.48406748,111.497502 L111.276007,5.55981958 C118.588097,-1.84023912 130.411903,-1.84023912 137.723993,5.48192423 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
